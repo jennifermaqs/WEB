@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consultoria</title>
+
+</head>
+<body>
+
+    <h1>Agendamento de Consultoria</h1>
+
+    <section>
+        <label for="busca-servico">Buscar por Serviços:</label>
+        <input type="search" id="busca-servico" name="busca-servico" list="sugestoes-servicos" placeholder="Ex: Consultoria, Audit...">
+        <datalist id="sugestoes-servicos">
+            <option value="Consultoria">
+            <option value="Audit">
+            <option value="Mentoria">
+            <option value="Treinamento">
+            <option value="Análise de Dados">
+        </datalist>
+    </section>
+
+    <form action="#">
+        <section>
+            <h2>Cadastro e Detalhes do Projeto</h2>
+            
+            <label for="email">E-mail de Contato:</label>
+            <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+<br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(85) 99999-9999">
+<br><br>
+
+
+            <label for="linkedin">Link do LinkedIn ou Site:</label>
+            <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/seu-perfil">
+<br><br>
+
+
+            <label for="horas">Quantidade de Horas Desejadas:</label>
+            <input type="number" id="horas" name="horas" min="1" max="100">
+<br><br>
+
+
+            <label for="urgencia">Nível de Urgência (1 a 10):</label>
+            <input type="range" id="urgencia" name="urgencia" min="1" max="10" value="5">
+<br><br>
+
+
+            <label for="cor-identidade">Cor da Identidade Visual:</label>
+            <input type="color" id="cor-identidade" name="cor-identidade" value="#007bff">
+        </section>
+
+        <section>
+            <h2>Cronograma</h2>
+            
+            <label for="dia-reuniao">Dia da Primeira Reunião:</label>
+            <input type="date" id="dia-reuniao" name="dia-reuniao">
+<br><br>
+
+
+            <label for="mes-faturamento">Mês de Faturamento:</label>
+            <input type="month" id="mes-faturamento" name="mes-faturamento">
+<br><br>
+
+            <label for="semana-inicio">Semana de Início do Projeto:</label>
+            <input type="week" id="semana-inicio" name="semana-inicio">
+<br><br>
+
+            <label for="hora-chamada">Horário de Início da Chamada:</label>
+            <input type="time" id="hora-chamada" name="hora-chamada">
+<br><br>
+
+            <label for="checkin-emergencia">Check-in de Emergência (Data e Hora):</label>
+            <input type="datetime-local" id="checkin-emergencia" name="checkin-emergencia">
+        </section>
+<br><br>
+
+        <button type="submit">Finalizar Agendamento</button>
+    </form>
+
+    <section>
+        <h2>Status do Consultor</h2>
+        <p>Ocupação da Agenda:</p>
+        <meter id="ocupacao" min="0" max="100" low="30" high="80" optimum="20" value="65"></meter>
+        <span>65% de ocupação</span>
+
+        <h3>Localização do Escritório</h3>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15925.334415849924!2d-38.5434199!3d-3.7439169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7490214a1a5b9%3A0xc48e658390b1064d!2sUFC%20-%20Campus%20do%20Pici!5e0!3m2!1spt-BR!2sbr!4v1710000000000" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </section>
+
+</body>
+</html>

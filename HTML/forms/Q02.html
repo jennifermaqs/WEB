@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Inscrição Encontros Universitários</title>
+</head>
+<body>
+
+    <h1>Inscrição de Trabalhos - Encontros Universitários</h1>
+
+     <form action="destino.html">
+
+        <fieldset>
+            <legend>Dados do Trabalho</legend>
+            
+            <label for="titulo">Título do Trabalho:</label><br>
+            <input type="text" id="titulo" name="titulo" maxlength="100" required>
+            <br><br>
+
+            <label for="resumo">Resumo do Trabalho:</label><br>
+            <textarea id="resumo" name="resumo" maxlength="500" required></textarea>
+            <br><br>
+
+            <label>Trilha de Submissão:</label><br>
+            <input type="checkbox" id="pesquisa" name="trilha" value="pesquisa">
+            <label for="pesquisa">Pesquisa Científica</label><br>
+            
+            <input type="checkbox" id="inovacao" name="trilha" value="inovacao">
+            <label for="inovacao">Inovação e Tecnologia</label><br>
+            
+            <input type="checkbox" id="extensao" name="trilha" value="extensao">
+            <label for="extensao">Extensão Universitária</label><br>
+            
+            <input type="checkbox" id="empreendedorismo" name="trilha" value="empreendedorismo">
+            <label for="empreendedorismo">Empreendedorismo</label><br>
+            
+            <input type="checkbox" id="arte" name="trilha" value="arte">
+            <label for="arte">Arte e Cultura</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Autores e Orientadores</legend>
+
+            <label for="autores">Autores:</label><br>
+            <input type="text" id="autores" name="autores" maxlength="200" required>
+            <br><br>
+
+            <label for="orientador">Orientador:</label><br>
+            <select id="orientador" name="orientador">
+                <option value="orientador1">Prof. Carlos</option>
+                <option value="orientador2">Prof. Maria</option>
+                <option value="orientador3">Prof. José</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Links e Comentários</legend>
+
+            <label for="link_anexos">Link para Anexos:</label><br>
+            <input type="url" id="link_anexos" name="link_anexos">
+            <br><br>
+
+            <label for="comentarios">Comentários Adicionais:</label><br>
+            <textarea id="comentarios" name="comentarios" maxlength="300"></textarea>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+
+    </form>
+
+</body>
+</html>
